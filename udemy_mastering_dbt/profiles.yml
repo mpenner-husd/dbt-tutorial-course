@@ -1,0 +1,14 @@
+udemy_mastering_dbt:
+  target: dev # The default for any dbt commands
+  outputs:
+    dev:
+      dataset: mastering_dbt_tutorial_dev
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: service-account
+      keyfile: C:/Users/mpenner/.dbt/udemy_mastering_dbt_bigquery_key.json
+      priority: interactive
+      project: argon-key-500423-n8
+      threads: 64 # Max number of concurrent things running at once
+      type: bigquery
